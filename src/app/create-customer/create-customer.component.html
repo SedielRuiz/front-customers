@@ -1,0 +1,64 @@
+<div class="container">
+    <h2>New Customer</h2><hr>
+    <span class="form-group">
+        <label for="document">Document</label>
+    </span>
+    <div class="form-group">
+        <input type="number" placeholder="Documento" ng-model="customer.document" class="form-control" name="document" id="document" autofocus />
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <span class="form-group">
+                <label for="firstName">First Name</label>
+            </span>
+            <div class="form-group">
+                <input type="text" ng-model="customer.firstName" class="form-control" name="firstName" id="firstName" maxlength="100" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <span class="form-group">
+                <label for="secondName">Second Name</label>
+            </span>
+            <div class="form-group">
+                <input type="text" ng-model="customer.secondName" class="form-control" name="secondName" id="secondName" maxlength="100" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <span class="form-group">
+                <label for="firstLastName">First LastName</label>
+            </span>
+            <div class="form-group">
+                <input type="text" ng-model="customer.firstLastName" class="form-control" name="firstLastName" id="firstLastName" maxlength="100" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <span class="form-group">
+                <label for="secondLastName">second LastName</label>
+            </span>
+            <div class="form-group">
+                <input type="text" ng-model="customer.secondLastName" class="form-control" name="secondLastName" id="secondLastName" maxlength="100" />
+            </div>
+        </div>
+    </div>
+
+    <span class="form-group">
+        <label for="email">Email</label>
+    </span>
+    <div class="form-group">
+        <input type="email" ng-model="customer.email" class="form-control" name="email" id="email" />
+    </div>
+
+    <span class="form-group">
+        <label for="address">Address</label>
+    </span>
+    <div class="form-group">
+        <input type="text" ng-model="customer.address" class="form-control" name="address" id="address" />
+    </div>
+
+    <a (click)="saveCustomer()" class="btn btn-success">Guardar</a>
+    <a routerLink="/list-customer" class="btn btn-danger">Cancelar</a>
+
+</div>
